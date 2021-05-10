@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body
+{
+    background-image: url("https://i.pinimg.com/originals/21/5c/7f/215c7fdca6033092baa04b35c17466bd.gif");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1
+{
+    margin: 0;
+}
+
+header
+{
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(86, 0, 246);
+    color: white;
+}
+
+header h1
+{
+    margin-left: 2%;
+    transition-duration: 0.4s;
+}
+
+header h1:hover
+{
+    color: rgba(36, 35, 35, 0.993);;
+}
+
+
+
+main
+{
+    background-color: rgba(36, 35, 35, 0.993);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+}
+
+form
+{
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input
+{
+    background-color: white;
+    width: 150px;
+    height: 50px;
+}
+
+input:focus 
+{
+    background-color: rgb(86, 0, 246);
+    color: white;
+    transition: background-color 1s;
+}
+
+input:hover
+{
+    cursor: pointer;
+}
+
+button
+{
+    width: 100px;
+    height: 40px;  
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+}
+
+button:hover
+{
+    background-color: rgb(86, 0, 246);
+    color: white;
+}
+
+.Oculto{
+    display: none;
+}
+
+.Conteudo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Informacoes
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: white;
+    margin-left: 2%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.Titulo
+{
+    animation: MostraConteudo 2s;
+}
+
+.Data
+{
+    animation: MostraConteudo 2.5s;
+}
+
+.Descricao
+{
+    animation: MostraConteudo 3s;
+}
+
+.Imagem img
+{
+    width: 700px;
+    height: 300px;
+    animation: MostraConteudo 3s;
+}
+
+.VideoNasa
+{
+    width: 700px;
+    height: 300px;
+    animation: MostraConteudo 3s;
+}
+
+@keyframes MostraConteudo {
+    0% {
+      opacity: 0;
+      transform: translateX(600px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@media (max-width: 700px)
+{
+    header
+    {
+        text-align: center;
+    }
+}
